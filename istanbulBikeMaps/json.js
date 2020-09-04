@@ -20,7 +20,7 @@ async function get() {
     let json = await response.json()
     console.log(json)
   } else {
-    alert('HTTP-Error: ' + response.status)
+    // alert('HTTP-Error: ' + response.status)
   }
 }
 get()
