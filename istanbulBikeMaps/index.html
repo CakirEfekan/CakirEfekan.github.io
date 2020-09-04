@@ -33,8 +33,7 @@
     <div id="map"></div>
     <script>
       xhttp = new XMLHttpRequest()
-      xhttp.open('POST', 'data.json', true)
-      xhttp.withCredentials = true
+      xhttp.open('POST', 'data.json')
       xhttp.onload = function () {
         let data = JSON.parse(this.response)
         console.log(data)
