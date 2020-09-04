@@ -9,7 +9,7 @@ xhttp.onload = function () {
 xhttp.send({ request: 'authentication token' })
 */
 async function get() {
-  let url = 'data.js'
+  let url = 'data.json'
   let response = await fetch(url, {
     method: 'POST'
   })
