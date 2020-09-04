@@ -40,14 +40,13 @@
         if (response.ok) {
           // if HTTP-status is 200-299
           // get the response body (the method explained below)
-          let json = await response
-          return await json
+          let json = await response.json
         } else {
           // alert('HTTP-Error: ' + response.status)
         }
+        document.getElementById('map').innerHTML = json.dataList
       }
       let stations = get().json
-      document.getElementById('map').innerHTML = stations.dataList
       /*var map = L.map('map').setView([41.015137, 28.97953], 10)
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -68,6 +67,5 @@
         .bindPopup('I am a green leaf.')
         .addTo(map)*/
     </script>
-    <script src="json.js" async></script>
   </body>
 </html>
