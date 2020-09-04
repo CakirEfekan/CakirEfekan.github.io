@@ -20,6 +20,7 @@ async function get() {
     stations.map(
       (station) =>
         function () {
+          console.log(station.lat)
           L.marker([station.lat, station.lon])
             .bindPopup('I am a green leaf.')
             .addTo(map)
