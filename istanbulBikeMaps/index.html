@@ -41,10 +41,10 @@
           // if HTTP-status is 200-299
           // get the response body (the method explained below)
           let json = await response.json
+          document.getElementById('map').innerHTML = await json.dataList
         } else {
           // alert('HTTP-Error: ' + response.status)
         }
-        document.getElementById('map').innerHTML = await json.dataList
       }
       get()
       /*var map = L.map('map').setView([41.015137, 28.97953], 10)
