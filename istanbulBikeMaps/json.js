@@ -26,7 +26,6 @@ async function get() {
             .addTo(map)
         }
     )
-    console.log(stations)
   } else {
     // alert('HTTP-Error: ' + response.status)
   }
