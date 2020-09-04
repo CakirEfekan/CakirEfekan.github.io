@@ -36,13 +36,12 @@
       xhttp.open('GET', 'data.json')
       xhttp.onload = function () {
         let data = JSON.parse(this.response)
-        console.log(data)
+        document.getElementById('map').innerHTML = data
       }
       xhttp.send()
-      let stations = get()
+      /*
 
-      var map = L.map('map').setView([41.015137, 28.97953], 10)
-
+      let map = L.map('map').setView([41.015137, 28.97953], 10)
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution:
           '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>'
