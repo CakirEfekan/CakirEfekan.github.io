@@ -44,7 +44,7 @@
         } else {
           // alert('HTTP-Error: ' + response.status)
         }
-        document.getElementById('map').innerHTML = json.dataList
+        document.getElementById('map').innerHTML = await json.dataList
       }
       get()
       /*var map = L.map('map').setView([41.015137, 28.97953], 10)
