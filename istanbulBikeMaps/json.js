@@ -10,9 +10,7 @@ xhttp.send({ request: 'authentication token' })
 */
 async function get() {
   let url = 'data.json'
-  let response = await fetch(url, {
-    method: 'POST'
-  })
+  let response = await fetch(url)
 
   if (response.ok) {
     // if HTTP-status is 200-299
