@@ -17,6 +17,14 @@ async function get() {
     // get the response body (the method explained below)
     let json = await response.json()
     let stations = json.dataList
+    stations.map(
+      (station) =>
+        function () {
+          L.marker([station.lat, station.lon])
+            .bindPopup('I am a green leaf.')
+            .addTo(map)
+        }
+    )
     console.log(stations)
   } else {
     // alert('HTTP-Error: ' + response.status)
