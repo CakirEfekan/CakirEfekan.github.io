@@ -11,7 +11,7 @@ fetch('mevcut-bisiklet-yollar.kml')
     const bounds = track.getBounds()
     map.fitBounds(bounds)
   })
-fetch('paylaml-bisiklet-yollar.kml')
+/*fetch('paylaml-bisiklet-yollar.kml')
   .then((res) => res.text())
   .then((kmltext) => {
     // Create new kml overlay
@@ -24,3 +24,4 @@ fetch('paylaml-bisiklet-yollar.kml')
     const bounds = track.getBounds()
     map.fitBounds(bounds)
   })
+*/
