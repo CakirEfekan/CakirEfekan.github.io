@@ -49,7 +49,7 @@
 
 ## Projeler
 
-<h4>#1</h4><a href="https://cakirefekan.github.io/istanbulBikeMaps/"><b>İBB Bisiklet İstasyonları Haritası</b><br>
+<h4>#1</h4><a target="_blank" href="https://cakirefekan.github.io/istanbulBikeMaps/"><b>İBB Bisiklet İstasyonları Haritası</b><br>
 IMM Bike Stations Map</a>
 
 <!-- CONTACT -->
