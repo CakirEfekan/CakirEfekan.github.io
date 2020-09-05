@@ -63,7 +63,8 @@
       let map = L.map('map', {
     center: istanbul,
     zoom: 10,
-    layers: hosmTile
+    layers: hosmTile,
+    minZoom:10
 })
       let overlays = L.control.layers(baseMaps,{}).addTo(map);
     </script>
