@@ -1,6 +1,6 @@
 <!--
 *** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
+*** make this better, please fork the CakirEfekan.github.io and create a pull request or simply open
 *** an issue with the tag "enhancement".
 *** Thanks again! Now go create something AMAZING! :D
 ***
@@ -40,7 +40,7 @@
     <br />
     <a href="https://github.com/CakirEfekan/CakirEfekan.github.io">View Demo</a>
     ·
-    <a href="https://github.com/CakirEfekan/CakirEfekan.github.io/issues">Report Bug</a>
+    <a href="https://github.com/CakirEfekan/CakirEfekan.github.io/issues">CakirEfekan.github.iort Bug</a>
     ·
     <a href="https://github.com/CakirEfekan/CakirEfekan.github.io/issues">Request Feature</a>
   </p>
@@ -63,16 +63,15 @@ Project Link: [https://github.com/CakirEfekan/CakirEfekan.github.io](https://git
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/CakirEfekan/repo.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/CakirEfekan/CakirEfekan.github.io.svg?style=flat-square
 [contributors-url]: https://github.com/CakirEfekan/CakirEfekan.github.io/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/CakirEfekan/repo.svg?style=flat-square
+[forks-shield]: https://img.shields.io/github/forks/CakirEfekan/CakirEfekan.github.io.svg?style=flat-square
 [forks-url]: https://github.com/CakirEfekan/CakirEfekan.github.io/network/members
-[stars-shield]: https://img.shields.io/github/stars/CakirEfekan/repo.svg?style=flat-square
+[stars-shield]: https://img.shields.io/github/stars/CakirEfekan/CakirEfekan.github.io.svg?style=flat-square
 [stars-url]: https://github.com/CakirEfekan/CakirEfekan.github.io/stargazers
-[issues-shield]: https://img.shields.io/github/issues/CakirEfekan/repo.svg?style=flat-square
+[issues-shield]: https://img.shields.io/github/issues/CakirEfekan/CakirEfekan.github.io.svg?style=flat-square
 [issues-url]: https://github.com/CakirEfekan/CakirEfekan.github.io/issues
-[license-shield]: https://img.shields.io/github/license/CakirEfekan/repo.svg?style=flat-square
-[license-url]: https://github.com/CakirEfekan/CakirEfekan.github.io/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/CakirEfekan/CakirEfekan.github.io.svg?style=flat-square
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/CakirEfekan
 [product-screenshot]: images/screenshot.png
