@@ -9,6 +9,7 @@ request.onload = function () {
 }
 request.send()
 function addMarker(obj) {
+  let stationArray = []
   let stations = obj.dataList
   let countStation = stations.length
   //  console.log(countStation)
@@ -16,8 +17,8 @@ function addMarker(obj) {
     let station = stations[i]
     let kapasite = parseInt(station.dolu) + parseInt(station.bos)
     //    console.log(station)
-    L.marker([station.lat, station.lon])
-      .bindPopup(
+    stationArray.push(
+      L.marker([station.lat, station.lon]).bindPopup(
         '<b>' +
           station.adi +
           '</b><br>Bisiklet Kapasitesi: ' +
@@ -28,6 +29,9 @@ function addMarker(obj) {
           station.lon +
           '">Google Maps`te göster</a>'
       )
-      .addTo(map)
+    )
   }
+  let stationLayer = L.layerGroup(stationArray)
+ overlays.addOverlay(stationLayer, "İstasyonlar")
+
 }
