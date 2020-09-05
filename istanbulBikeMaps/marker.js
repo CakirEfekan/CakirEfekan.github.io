@@ -11,11 +11,11 @@ request.send()
 function addMarker(obj) {
   let stations = obj.dataList
   let countStation = stations.length
-  console.log(countStation)
+  //  console.log(countStation)
   for (let i = 0; i < countStation; i++) {
     let station = stations[i]
     let kapasite = parseInt(station.dolu) + parseInt(station.bos)
-    console.log(station)
+    //    console.log(station)
     L.marker([station.lat, station.lon])
       .bindPopup(
         '<b>' + station.adi + '</b><br>Bisiklet Kapasitesi: ' + kapasite
