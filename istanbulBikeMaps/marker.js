@@ -22,7 +22,7 @@ function addMarker(obj) {
           station.adi +
           '</b><br>Bisiklet Kapasitesi: ' +
           kapasite +
-          '<br><a href="https://www.google.com/maps/search/?api=1&query=' +
+          '<br><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=' +
           station.lat +
           ',' +
           station.lon +
