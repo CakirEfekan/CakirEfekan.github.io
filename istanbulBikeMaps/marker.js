@@ -18,7 +18,15 @@ function addMarker(obj) {
     //    console.log(station)
     L.marker([station.lat, station.lon])
       .bindPopup(
-        '<b>' + station.adi + '</b><br>Bisiklet Kapasitesi: ' + kapasite + '<br><a href="https://www.google.com/maps/search/?api=1&query='+station.lat+','station.lon+'">Google Maps`te göster</a>'
+        '<b>' +
+          station.adi +
+          '</b><br>Bisiklet Kapasitesi: ' +
+          kapasite +
+          '<br><a href="https://www.google.com/maps/search/?api=1&query=' +
+          station.lat +
+          ',' +
+          station.lon +
+          '">Google Maps`te göster</a>'
       )
       .addTo(map)
   }
