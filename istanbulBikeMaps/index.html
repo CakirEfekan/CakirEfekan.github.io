@@ -127,6 +127,7 @@
         addHooks: function () {
           map.stopLocate()
           map.removeLayer(currentLocation)
+          isCurrentLocation == false
           new L.Toolbar2.Control({
             actions: [geoLocationActivate],
             position: 'topleft'
@@ -137,9 +138,8 @@
         actions: [geoLocationActivate],
         position: 'topleft'
       }).addTo(map)
-
       let currentLocation
-
+      let isCurrentLocation = false
       function onLocationFound(e) {
         var radius = e.accuracy
         var myIcon = L.icon({
@@ -160,6 +160,10 @@
           currentLocation._popup.setContent(
             'Bu noktanın ' + parseInt(radius) + ' metre civarındasınız.'
           )
+          if (isCurrentLocation == false) {
+            map.addLayer(currentLocation)
+            currentLocation.openPopup()
+          }
         }
 
         //L.circle(e.latlng, radius).addTo(map)
