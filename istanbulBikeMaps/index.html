@@ -126,6 +126,7 @@
 
         addHooks: function () {
           map.stopLocate()
+          map.removeLayer(currentLocation)
           new L.Toolbar2.Control({
             actions: [geoLocationActivate],
             position: 'topleft'
