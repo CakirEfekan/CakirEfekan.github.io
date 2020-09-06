@@ -130,6 +130,9 @@
             .openPopup()
         } else {
           currentLocation.setLatLng(e.latlng)
+          currentLocation._popup.setContent(
+            'Bu noktanın ' + radius + ' metre civarındasınız.'
+          )
         }
 
         //L.circle(e.latlng, radius).addTo(map)
