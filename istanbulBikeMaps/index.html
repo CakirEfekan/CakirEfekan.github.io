@@ -107,12 +107,14 @@
         },
 
         addHooks: function () {
-          map.locate({ watch: true })
+          map.locate({ setView: true, watch: true })
         }
       })
+
       new L.Toolbar2.Control({
         actions: [MyCustomAction]
       }).addTo(map)
+      let currentLocation
       function onLocationFound(e) {
         var radius = e.accuracy
         var myIcon = L.icon({
@@ -121,10 +123,14 @@
           iconAnchor: [15, 15],
           popupAnchor: [-3, -25]
         })
-        L.marker(e.latlng, { icon: myIcon })
-          .addTo(map)
-          .bindPopup(' Bu noktanın ' + radius + ' metre civarındasınız.')
-          .openPopup()
+        if (!currentLocation) {
+          currentLocation = L.marker(e.latlng, { icon: myIcon })
+            .addTo(map)
+            .bindPopup(' Bu noktanın ' + radius + ' metre civarındasınız.')
+            .openPopup()
+        } else {
+          currentLocation.setLatLng(e.latlng)
+        }
 
         //L.circle(e.latlng, radius).addTo(map)
       }
