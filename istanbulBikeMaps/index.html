@@ -28,7 +28,8 @@
       crossorigin=""
     ></script>
     <script src="L.KML.js"></script>
-    
+    <link rel="stylesheet" href="leaflet.toolbar.css" />
+    <script src="leaflet.toolbar.js"></script>
     <style>
       html,
       body {
@@ -45,46 +46,97 @@
 
   <body>
     <div id="map"></div>
-    
-    <script>
 
-     let osmTile = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution:
-          '&copy; <a target="_blank" href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> | <a target="_blank" href="https://data.ibb.gov.tr/">İBB Açık Veri Portalı</a>'
-      });   
-      let hosmTile = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-        attribution:
-          '&copy; <a target="_blank" href="https://www.openstreetmap.fr/copyright-article-13/">Humanitarian, OpenStreetMap</a> | <a target="_blank" href="https://data.ibb.gov.tr/">İBB Açık Veri Portalı</a>'
-      });
-      let mapboxStreetTile = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/ckeqy8ran5lga19k9b9smmv14/tiles/256/{z}/{x}/{y}@2x?access_token={accessToken}', {
-        attribution:
-          '&copy; <a target="_blank" href="https://www.openstreetmap.org/copyright/">OpenStreetMap</a> | <a target="_blank" href="https://data.ibb.gov.tr/">İBB Açık Veri Portalı</a> | Imagery © <a href="https://mapbox.com">Mapbox</a>',
+    <script>
+      let osmTile = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+          attribution:
+            '&copy; <a target="_blank" href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> | <a target="_blank" href="https://data.ibb.gov.tr/">İBB Açık Veri Portalı</a>'
+        }
+      )
+      let hosmTile = L.tileLayer(
+        'https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png',
+        {
+          attribution:
+            '&copy; <a target="_blank" href="https://www.openstreetmap.fr/copyright-article-13/">Humanitarian, OpenStreetMap</a> | <a target="_blank" href="https://data.ibb.gov.tr/">İBB Açık Veri Portalı</a>'
+        }
+      )
+      let mapboxStreetTile = L.tileLayer(
+        'https://api.mapbox.com/styles/v1/{id}/ckeqy8ran5lga19k9b9smmv14/tiles/256/{z}/{x}/{y}@2x?access_token={accessToken}',
+        {
+          attribution:
+            '&copy; <a target="_blank" href="https://www.openstreetmap.org/copyright/">OpenStreetMap</a> | <a target="_blank" href="https://data.ibb.gov.tr/">İBB Açık Veri Portalı</a> | Imagery © <a href="https://mapbox.com">Mapbox</a>',
           id: 'cakirefekan',
-          accessToken: 'pk.eyJ1IjoiY2FraXJlZmVrYW4iLCJhIjoiY2tlcHAzZWNtMmppdDJzcGMxOG04a21kMyJ9._Z_qxs1w7c87CsBWii_A8w'
-      });
-      let mapboxNightTile = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/ckeqycmef6mnd19lqbrdxvx84/tiles/256/{z}/{x}/{y}@2x?access_token={accessToken}', {
-        attribution:
-          '&copy; <a target="_blank" href="https://www.openstreetmap.org/copyright/">OpenStreetMap</a> | <a target="_blank" href="https://data.ibb.gov.tr/">İBB Açık Veri Portalı</a> | Imagery © <a href="https://mapbox.com">Mapbox</a>',
+          accessToken:
+            'pk.eyJ1IjoiY2FraXJlZmVrYW4iLCJhIjoiY2tlcHAzZWNtMmppdDJzcGMxOG04a21kMyJ9._Z_qxs1w7c87CsBWii_A8w'
+        }
+      )
+      let mapboxNightTile = L.tileLayer(
+        'https://api.mapbox.com/styles/v1/{id}/ckeqycmef6mnd19lqbrdxvx84/tiles/256/{z}/{x}/{y}@2x?access_token={accessToken}',
+        {
+          attribution:
+            '&copy; <a target="_blank" href="https://www.openstreetmap.org/copyright/">OpenStreetMap</a> | <a target="_blank" href="https://data.ibb.gov.tr/">İBB Açık Veri Portalı</a> | Imagery © <a href="https://mapbox.com">Mapbox</a>',
           id: 'cakirefekan',
-          accessToken: 'pk.eyJ1IjoiY2FraXJlZmVrYW4iLCJhIjoiY2tlcHAzZWNtMmppdDJzcGMxOG04a21kMyJ9._Z_qxs1w7c87CsBWii_A8w'
-      });
+          accessToken:
+            'pk.eyJ1IjoiY2FraXJlZmVrYW4iLCJhIjoiY2tlcHAzZWNtMmppdDJzcGMxOG04a21kMyJ9._Z_qxs1w7c87CsBWii_A8w'
+        }
+      )
       const baseMaps = {
-        "OpenStreetMap" : osmTile,
-        "Humanitarian" : hosmTile,
-        "Street": mapboxStreetTile,
-        "Gece": mapboxNightTile
+        OpenStreetMap: osmTile,
+        Humanitarian: hosmTile,
+        Street: mapboxStreetTile,
+        Gece: mapboxNightTile
       }
       let istanbul = [41.015137, 28.97953]
       let map = L.map('map', {
-    center: istanbul,
-    zoom: 10,
-    layers: mapboxStreetTile,
-    minZoom:10
-})
-      let overlays = L.control.layers(baseMaps,{}).addTo(map);
+        center: istanbul,
+        zoom: 10,
+        layers: mapboxStreetTile,
+        minZoom: 10
+      })
+
+      let overlays = L.control.layers(baseMaps, {}).addTo(map)
+      var MyCustomAction = L.Toolbar2.Action.extend({
+        options: {
+          toolbarIcon: {
+            html:
+              '<img style="width:75%;top-padding:25%;" src="location_searching-black-18dp.svg" />',
+            tooltip: 'Konumumu Göster'
+          }
+        },
+
+        addHooks: function () {
+          map.locate({ watch: true })
+        }
+      })
+      new L.Toolbar2.Control({
+        actions: [MyCustomAction]
+      }).addTo(map)
+      function onLocationFound(e) {
+        var radius = e.accuracy
+        var myIcon = L.icon({
+          iconUrl: 'gps_fixed-black-18dp.svg',
+          iconSize: [30, 30],
+          iconAnchor: [15, 15],
+          popupAnchor: [-3, -25]
+        })
+        L.marker(e.latlng, { icon: myIcon })
+          .addTo(map)
+          .bindPopup(' Bu noktanın ' + radius + ' metre civarındasınız.')
+          .openPopup()
+
+        //L.circle(e.latlng, radius).addTo(map)
+      }
+
+      map.on('locationfound', onLocationFound)
+      function onLocationError(e) {
+        alert(e.message)
+      }
+
+      map.on('locationerror', onLocationError)
     </script>
     <script src="marker.js" async></script>
     <script src="kmlLoader.js" async></script>
-
   </body>
 </html>
