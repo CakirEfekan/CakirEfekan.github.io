@@ -97,7 +97,8 @@
       })
 
       let overlays = L.control.layers(baseMaps, {}).addTo(map)
-      var MyCustomAction = L.Toolbar2.Action.extend({
+
+      var geoLocationActivate = L.Toolbar2.Action.extend({
         options: {
           toolbarIcon: {
             html:
@@ -107,14 +108,37 @@
         },
 
         addHooks: function () {
-          map.locate({ setView: true, watch: true })
+          map.locate({ setView: true, watch: true, maxZoom: 0 })
+          new L.Toolbar2.Control({
+            actions: [geoLocationDeactivate],
+            position: 'topleft'
+          }).addTo(map)
         }
       })
+      var geoLocationDeactivate = L.Toolbar2.Action.extend({
+        options: {
+          toolbarIcon: {
+            html:
+              '<img style="width:75%;top-padding:25%;" src="gps_off-black-18dp.svg" />',
+            tooltip: 'Konumumu Göster'
+          }
+        },
 
+        addHooks: function () {
+          map.stopLocate()
+          new L.Toolbar2.Control({
+            actions: [geoLocationActivate],
+            position: 'topleft'
+          }).addTo(map)
+        }
+      })
       new L.Toolbar2.Control({
-        actions: [MyCustomAction]
+        actions: [geoLocationActivate],
+        position: 'topleft'
       }).addTo(map)
+
       let currentLocation
+
       function onLocationFound(e) {
         var radius = e.accuracy
         var myIcon = L.icon({
