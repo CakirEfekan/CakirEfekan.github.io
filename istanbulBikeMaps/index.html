@@ -28,6 +28,7 @@
       crossorigin=""
     ></script>
     <script src="L.KML.js"></script>
+    
     <style>
       html,
       body {
@@ -55,15 +56,29 @@
         attribution:
           '&copy; <a target="_blank" href="https://www.openstreetmap.fr/copyright-article-13/">Humanitarian, OpenStreetMap</a> | <a target="_blank" href="https://data.ibb.gov.tr/">İBB Açık Veri Portalı</a>'
       });
+      let mapboxStreetTile = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/ckeqy8ran5lga19k9b9smmv14/tiles/256/{z}/{x}/{y}@2x?access_token={accessToken}', {
+        attribution:
+          '&copy; <a target="_blank" href="https://www.openstreetmap.org/copyright/">OpenStreetMap</a> | <a target="_blank" href="https://data.ibb.gov.tr/">İBB Açık Veri Portalı</a> | Imagery © <a href="https://mapbox.com">Mapbox</a>',
+          id: 'cakirefekan',
+          accessToken: 'pk.eyJ1IjoiY2FraXJlZmVrYW4iLCJhIjoiY2tlcHAzZWNtMmppdDJzcGMxOG04a21kMyJ9._Z_qxs1w7c87CsBWii_A8w'
+      });
+      let mapboxNightTile = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/ckeqycmef6mnd19lqbrdxvx84/tiles/256/{z}/{x}/{y}@2x?access_token={accessToken}', {
+        attribution:
+          '&copy; <a target="_blank" href="https://www.openstreetmap.org/copyright/">OpenStreetMap</a> | <a target="_blank" href="https://data.ibb.gov.tr/">İBB Açık Veri Portalı</a> | Imagery © <a href="https://mapbox.com">Mapbox</a>',
+          id: 'cakirefekan',
+          accessToken: 'pk.eyJ1IjoiY2FraXJlZmVrYW4iLCJhIjoiY2tlcHAzZWNtMmppdDJzcGMxOG04a21kMyJ9._Z_qxs1w7c87CsBWii_A8w'
+      });
       const baseMaps = {
         "OpenStreetMap" : osmTile,
-        "Humanitarian" : hosmTile
+        "Humanitarian" : hosmTile,
+        "Street": mapboxStreetTile,
+        "Gece": mapboxNightTile
       }
       let istanbul = [41.015137, 28.97953]
       let map = L.map('map', {
     center: istanbul,
     zoom: 10,
-    layers: hosmTile,
+    layers: mapboxStreetTile,
     minZoom:10
 })
       let overlays = L.control.layers(baseMaps,{}).addTo(map);
