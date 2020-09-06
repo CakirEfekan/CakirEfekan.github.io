@@ -126,12 +126,14 @@
         if (!currentLocation) {
           currentLocation = L.marker(e.latlng, { icon: myIcon })
             .addTo(map)
-            .bindPopup(' Bu noktanın ' + radius + ' metre civarındasınız.')
+            .bindPopup(
+              ' Bu noktanın ' + parseInt(radius) + ' metre civarındasınız.'
+            )
             .openPopup()
         } else {
           currentLocation.setLatLng(e.latlng)
           currentLocation._popup.setContent(
-            'Bu noktanın ' + radius + ' metre civarındasınız.'
+            'Bu noktanın ' + parseInt(radius) + ' metre civarındasınız.'
           )
         }
 
