@@ -39,7 +39,7 @@ function deleteDrawing(map, ab) {
 var pasteA = L.Toolbar2.Action.extend({
   options: {
     toolbarIcon: {
-      html: '&#8689;',
+      html: 'Aktar',
       tooltip: 'Çizimleri Buraya Aktar'
     }
   },
@@ -51,7 +51,7 @@ var pasteA = L.Toolbar2.Action.extend({
 var pasteB = L.Toolbar2.Action.extend({
   options: {
     toolbarIcon: {
-      html: '&#8689;',
+      html: 'Aktar',
       tooltip: 'Çizimleri Buraya Aktar'
     }
   },
