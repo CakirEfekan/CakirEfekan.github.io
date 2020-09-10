@@ -1,0 +1,67 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+#map,
+#container {
+  width: 50%;
+  height: 100%;
+}
+#map {
+  float: left;
+}
+#container {
+  float: right;
+}
+#container .map {
+  width: 100%;
+  height: 50%;
+}
+.buttonContainer {
+  position: absolute;
+  bottom: 15px;
+  left: 150px;
+  width: auto;
+}
+#delete,
+#export,
+#input,
+.inputLabel {
+  display: inline;
+  position: relative;
+  right: 10px;
+  z-index: 1000;
+  background: white;
+  color: black;
+  padding: 6px;
+  border-radius: 4px;
+  font-family: 'Helvetica Neue';
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+#input {
+  display: none;
+}
+
+.map {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: -1px;
+}
+.map:nth-child(2) {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: -1px;
+}
+.leaflet-editing-icon {
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 50%;
+}
+.leaflet-toolbar-0 > li > .leaflet-toolbar-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

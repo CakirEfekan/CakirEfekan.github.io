@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Leaflet Sync Demo - with three maps listening</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      crossorigin=""
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw-src.css"
+      integrity="sha512-vJfMKRRm4c4UupyPwGUZI8U651mSzbmmPgR3sdE3LcwBPsdGeARvUM5EcSTg34DK8YIRiIo+oJwNfZPMKEQyug=="
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/leaflet-styleeditor@latest/dist/css/Leaflet.StyleEditor.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="assets/leaflet-plugins/leaflet-draw/leaflet.draw.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://justinmanley.github.io/leaflet-draw-toolbar/deps/leaflet-toolbar/dist/leaflet.toolbar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://justinmanley.github.io/leaflet-draw-toolbar/dist/leaflet.draw-toolbar.css"
+    />
+    <link rel="stylesheet" href="assets/src/style/style.css" />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      crossorigin=""
+    ></script>
+    <script src="assets/leaflet-plugins/Leaflet.StyleEditor.js"></script>
+
+    <script src="assets/leaflet-plugins/leaflet.toolbar.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/Leaflet.draw.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/Leaflet.Draw.Event.js"></script>
+    <script
+      src="https://unpkg.com/esri-leaflet@2.5.0/dist/esri-leaflet.js"
+      integrity="sha512-ucw7Grpc+iEQZa711gcjgMBnmd9qju1CICsRaryvX7HJklK0pGl/prxKvtHwpgm5ZHdvAil7YPxI1oWPOWK3UQ=="
+      crossorigin=""
+    ></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/Toolbar.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/Tooltip.js"></script>
+
+    <script src="assets/leaflet-plugins/leaflet-draw/ext/GeometryUtil.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/ext/LatLngUtil.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/ext/LineUtil.Intersect.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/ext/Polygon.Intersect.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/ext/Polyline.Intersect.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/ext/TouchEvents.js"></script>
+
+    <script src="assets/leaflet-plugins/leaflet-draw/draw/DrawToolbar.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/draw/handler/Draw.Feature.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/draw/handler/Draw.SimpleShape.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/draw/handler/Draw.Polyline.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/draw/handler/Draw.Marker.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/draw/handler/Draw.Circle.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/draw/handler/Draw.CircleMarker.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/draw/handler/Draw.Polygon.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/draw/handler/Draw.Rectangle.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/edit/EditToolbar.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/edit/handler/EditToolbar.Edit.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/edit/handler/EditToolbar.Delete.js"></script>
+
+    <script src="assets/leaflet-plugins/leaflet-draw/Control.Draw.js"></script>
+
+    <script src="assets/leaflet-plugins/leaflet-draw/edit/handler/Edit.Poly.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/edit/handler/Edit.SimpleShape.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/edit/handler/Edit.Rectangle.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/edit/handler/Edit.Marker.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/edit/handler/Edit.CircleMarker.js"></script>
+    <script src="assets/leaflet-plugins/leaflet-draw/edit/handler/Edit.Circle.js"></script>
+
+    <script src="assets/leaflet-plugins/leaflet.toolbar.js"></script>
+    <script src="assets/leaflet-plugins/leaflet.draw-toolbar.js"></script>
+    <script src="assets/leaflet-plugins/ColorPicker.js"></script>
+    <script src="assets/leaflet-plugins/Leafler-OSMBuilding.js"></script>
+  </head>
+
+  <body>
+    <div id="map">
+      <div class="buttonContainer">
+        <a href="#" id="export" title="Çizim İndir">İndir</a>
+        <input type="file" id="input" accept=".geojson" />
+        <div id="inputLabel" class="inputLabel" title="Çizim Yükle">Yükle</div>
+      </div>
+    </div>
+
+    <div id="container">
+      <div id="mapA" class="map"></div>
+      <div id="mapB" class="map"></div>
+    </div>
+    <script src="assets/leaflet-plugins/L.Map.Sync.js"></script>
+
+    <script src="assets/src/js/sync.js"></script>
+    <script src="assets/src/js/draw.js"></script>
+    <script src="assets/src/js/export.js"></script>
+    <script src="assets/src/js/import.js"></script>
+    <script src="assets/src/js/rightclick.js"></script>
+    <script src="assets/src/js/osmBuilding.js"></script>
+    <script src="assets/src/js/toolbar.js"></script>
+  </body>
+</html>
