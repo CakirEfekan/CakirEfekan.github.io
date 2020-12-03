@@ -49,11 +49,11 @@
 
 ## Projeler
 
-<h4>#1</h4><a target="_blank" href="https://cakirefekan.github.io/istanbulBikeMaps/"><b>İBB Bisiklet İstasyonları Haritası</b><br>
+<h4>#1</h4><a target="_blank" href="https://cakirefekan.github.io/istanbulBikeMaps/index.html"><b>İBB Bisiklet İstasyonları Haritası</b><br>
 IMM Bike Stations Map</a>
-<h4>#2</h4><a target="_blank" href="https://cakirefekan.github.io/urbanDrawingSystem/"><b>Kentsel Tasarım Aracı</b><br>
+<h4>#2</h4><a target="_blank" href="https://cakirefekan.github.io/urbanDrawingSystem/index.html"><b>Kentsel Tasarım Aracı</b><br>
 Urban Design Tool</a>
-<h4>#3</h4><a target="_blank" href="https://cakirefekan.github.io/appliedProjectsofArchitecturalCompitetions/"><b>Uygulanmış Mimari Yarışma Projeleri</b><br>
+<h4>#3</h4><a target="_blank" href="https://cakirefekan.github.io/appliedProjectsofArchitecturalCompitetions/index.html"><b>Uygulanmış Mimari Yarışma Projeleri</b><br>
 Applied Projects of Architectural Competitions</a>
 <!-- CONTACT -->
 
