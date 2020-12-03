@@ -40,7 +40,7 @@
     <br />
     <a href="https://github.com/CakirEfekan/CakirEfekan.github.io">View Demo</a>
     ·
-    <a href="https://github.com/CakirEfekan/CakirEfekan.github.io/issues">CakirEfekan.github.iort Bug</a>
+    <a href="https://github.com/CakirEfekan/CakirEfekan.github.io/issues">Report Bug</a>
     ·
     <a href="https://github.com/CakirEfekan/CakirEfekan.github.io/issues">Request Feature</a>
   </p>
