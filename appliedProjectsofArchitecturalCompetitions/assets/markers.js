@@ -262,13 +262,153 @@ let projectArray = [{
     {
         "details": {
             "name": "Lüleburgaz Şehirlerarası Otobüs Terminali",
-            "latLong": [41.404678326584595, 27.347725621482812],
+            "latLong": [41.40458020835263, 27.347427779112053],
             "arch": ["kolektif Mimarlar", "Rasa Stüdyo"],
             "year": "2013-2016",
             "webpage": "http://kolektifmimarlar.com/projeler/luleburgaz-sehirlerarasi-otobus-terminali-2/"
         }
+    },
+    {
+        "details": {
+            "name": "Lâpseki Hükümet Konağı",
+            "latLong": [40.34663411656128, 26.683767192595433],
+            "arch": ["BBMD Bingöl Barka Mimarlık ve Danışmanlık"],
+            "year": "2014-2018",
+            "webpage": "http://www.bingolbarka.com/Project/lpseki-hukumet-konagi/500/"
+        }
+    },
+    {
+        "details": {
+            "name": "AKM Cumhurbaşkanlığı Senfoni Orkestrası Konser Salonu",
+            "latLong": [39.93468010859542, 32.84987387925971],
+            "arch": ["Uygur Mimarlık"],
+            "year": "1998-2020",
+            "webpage": "http://kolektifmimarlar.com/projeler/luleburgaz-sehirlerarasi-otobus-terminali-2/"
+        }
+    },
+    {
+        "details": {
+            "name": "Noterler Birliği Merkez Binası",
+            "latLong": [39.91336604133236, 32.80372651203574],
+            "arch": ["MuuM", "SE Mimarlık"],
+            "year": "2006-2007",
+            "webpage": "https://semim.com/proje/039-turkiye-noterler-birligi/"
+        }
+    },
+    {
+        "details": {
+            "name": "Petrol Ofisi Genel Müdürlüğü",
+            "latLong": [41.10901240471759, 29.020438002424584],
+            "arch": ["NSMH", "Kreatif Mimarlık"],
+            "year": "1999-2001",
+            "webpage": "http://www.nsmh.com/proje_detay.asp?lang=tr&ID=79"
+        }
+    },
+    {
+        "details": {
+            "name": "R. Rauf Denktaş Anıt Mezarı & Müzesi",
+            "latLong": [35.20493640864283, 33.32522684955353],
+            "arch": ["SE Mimarlık"],
+            "year": "2015-2020",
+            "webpage": "https://semim.com/proje/076-rauf-raif-denktas-anit-mezari-muzesi-ve-yakin-cevresi-tasarimi/"
+        }
+    },
+    {
+        "details": {
+            "name": "Mimarlar Odası Denizli Şubesi Hizmet Binası",
+            "latLong": [37.77862109955638, 29.0816416822091],
+            "arch": ["Küp Tasarım Ofisi"],
+            "year": "2013-2020",
+            "webpage": "http://www.kuptasarimofisi.com/yarismalar"
+        }
+    },
+    {
+        "details": {
+            "name": "Expo 2016 Antalya Kulesi",
+            "latLong": [36.94838770505063, 30.888835638757122],
+            "arch": ["NITA Mimarlık"],
+            "year": "2014-2016",
+            "webpage": "https://www.nitamimarlik.com/expokulesi"
+        }
+    },
+    {
+        "details": {
+            "name": "Savunma Sanayii Müsteşarlığı Hizmet Binası",
+            "latLong": [39.91281575363444, 32.83500078481219],
+            "arch": ["Uz Mimarlık"],
+            "year": "2006-2012",
+            "webpage": "http://www.uzmim.net/projeler-klasor/060-savunma-sanayi-mustesarligi/projeler1.html"
+        }
+    },
+    {
+        "details": {
+            "name": "Denizli Hükümet Konağı",
+            "latLong": [37.781283573766366, 29.084871475162704],
+            "arch": ["Sepin Mimarlık"],
+            "year": "2009-2012",
+            "webpage": "https://odoarchitecture.com/denizli-hukumet-konagi/"
+        }
+    },
+    {
+        "details": {
+            "name": "Anayasa Mahkemesi",
+            "latLong": [39.84502194428022, 32.790523425572545],
+            "arch": ["Gökhan Aksoy Mimarlık"],
+            "year": "2004-2007",
+            "webpage": "http://gokhanaksoymimarlik.com/projects-detail/anayasa-mahkemesi"
+        }
+    },
+    {
+        "details": {
+            "name": "Gaziantep Belediye Binası",
+            "latLong": [37.06632593472358, 37.37356431532692],
+            "arch": ["TH & İdil Mimarlık"],
+            "year": "1985-1994",
+            "webpage": "http://www.thidilmimarlik.com/yarismalar.aspx?id=1106"
+        }
+    },
+    {
+        "details": {
+            "name": "Manavgat Belediyesi Hizmet Binası",
+            "latLong": [36.789191975095555, 31.44866135607699],
+            "arch": ["Hazan Mimarlık"],
+            "year": "1995-2001",
+            "webpage": "http://www.hazanmimarlik.com/tr/project/manavgat-belediye-binasi"
+        }
+    },
+    {
+        "details": {
+            "name": "TESKOMB Binası",
+            "latLong": [39.89956322198235, 32.85935107960297],
+            "arch": ["Uz Mimarlık"],
+            "year": "2000-2003",
+            "webpage": "http://www.uzmim.net/projeler-klasor/036-tesk-merkez-birligi-binasi/projeler1.html"
+        }
+    },
+    {
+        "details": {
+            "name": "T.C. İslamabad Büyükelçiliği",
+            "latLong": [33.724225141865844, 73.10803583279248],
+            "arch": ["TH & İdil Mimarlık"],
+            "year": "1984-2003",
+            "webpage": "http://www.thidilmimarlik.com/yarismalar.aspx?id=1109"
+        }
+    },
+    {
+        "details": {
+            "name": "Bodrum Uluslararası Havalimanı",
+            "latLong": [37.24242937132267, 27.67710964995723],
+            "arch": ["Tabanlıoğlu Mimarlık"],
+            "year": "1998-2012",
+            "webpage": "http://www.tabanlioglu.com/project/bodrum-milas-international-airport/"
+        }
     }
 ]
+var markersLayer = new L.LayerGroup(); //layer contain searched elements
+
+map.addLayer(markersLayer);
+
+
 
 function designerTexter(array) {
     let designer
@@ -278,7 +418,8 @@ function designerTexter(array) {
     return designer
 }
 projectArray.forEach(element => {
-    let project = element.details
-    L.marker(project.latLong).addTo(map)
+    let project = element.details,
+        marker = L.marker(new L.latLng(project.latLong), { title: project.name })
         .bindPopup(project.name + "<br/>" + project.year + "<br/>" + project.arch + "<br/>" + "<a target='_blank' href='" + project.webpage + "'>Proje Sitesi</a>")
+    markersLayer.addLayer(marker)
 });
