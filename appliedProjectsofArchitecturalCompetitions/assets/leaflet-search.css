@@ -55,7 +55,7 @@
     width: 22px;
     height: 22px;
     position: absolute;
-    right: 28px;
+    right: 0px;
     margin: 6px 0;
     background: url('../images/search-icon.png') no-repeat 0 -46px;
     text-decoration: none;
@@ -85,8 +85,8 @@
     display: block;
     float: left;
     margin: 0px 0px;
-    width: 30px;
-    height: 30px;
+    width: 0px;
+    height: 0px;
     background: url('../images/search-icon.png') no-repeat 4px 4px rgba(255, 255, 255, 0);
     transition: background-color 0.5s ease;
     border-radius: 4px;
