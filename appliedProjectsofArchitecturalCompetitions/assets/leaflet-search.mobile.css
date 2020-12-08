@@ -67,4 +67,9 @@
     .leaflet-control-search .search-alert {
         font-size: 1.2em;
     }
+    .leaflet-bottom{
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        bottom: 0;
+    }
 }
