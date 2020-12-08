@@ -68,8 +68,7 @@
         font-size: 1.2em;
     }
     .leaflet-bottom{
-        position: -webkit-sticky; /* Safari */
-        position: sticky;
+        position: fixed;
         bottom: 0;
     }
 }
