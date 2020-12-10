@@ -14,7 +14,8 @@ map = L.map('map', {
     layers: [mapboxSatellite],
     center: centeredLatlong,
     zoomControl: false,
-    zoom: zoom
+    zoom: zoom,
+    worldCopyJump: true
 })
 L.control.zoom({
     position: 'topright'
