@@ -402,6 +402,33 @@ let projectArray = [{
             "year": "1998-2012",
             "webpage": "http://www.tabanlioglu.com/project/bodrum-milas-international-airport/"
         }
+    },
+    {
+        "details": {
+            "name": "Fransız Kültür Merkezi",
+            "latLong": [39.866695058697466, 32.86234231779089],
+            "arch": ["Ven Mimarlık"],
+            "year": "2008-2010",
+            "webpage": "http://www.ven.com.tr/projects/allprojects/314#%20FRANSIZ%20K%C3%9CLT%C3%9CR%20MERKEZ%C4%B0%20"
+        }
+    },
+    {
+        "details": {
+            "name": "Kayseri Adalet Sarayı",
+            "latLong": [38.7345212942367, 35.48116179491164],
+            "arch": ["Ven Mimarlık"],
+            "year": "2008-2012",
+            "webpage": "http://www.ven.com.tr/projects/allprojects/66#%20KAYSER%C4%B0%20ADALET%20SARAYI%20%20"
+        }
+    },
+    {
+        "details": {
+            "name": "Trabzon Belediye Hizmet Binası",
+            "latLong": [41.0063680287566, 39.71635509446168],
+            "arch": ["MTF Proje"],
+            "year": "2006-2010",
+            "webpage": "http://www.mtfproje.com.tr/portfolios/trabzon-belediye-binasi/"
+        }
     }
 ]
 var markersLayer = new L.LayerGroup(); //layer contain searched elements
