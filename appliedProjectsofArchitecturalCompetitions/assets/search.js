@@ -1,5 +1,5 @@
 var controlSearch = new L.Control.Search({
-    position: 'topleft',
+    position: "topleft",
     layer: markersLayer,
     initial: false,
     zoom: 15,
@@ -8,7 +8,7 @@ var controlSearch = new L.Control.Search({
     tooltipLimit: 5,
     textCancel: "iptal",
     textPlaceholder: "proje ara...",
-    collapsed: false
+    collapsed: false,
 });
 
-map.addControl(controlSearch);
+//added to map on positioner.js
