@@ -513,6 +513,36 @@ let projectArray = [{
             exists: false,
         },
     },
+    {
+        details: {
+            name: "Tepebaşı Belediyesi",
+            latLong: [39.78358037505719, 30.501431419336836],
+            arch: ["SE Mimarlık"],
+            year: "2004-2008",
+            webpage: "https://semim.com/proje/040-tepebasi-belediyesi/",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Bolu Karaçayır Jimnastik Salonu",
+            latLong: [40.71953070267054, 31.608508369192595],
+            arch: ["Azaksu Mimarlık"],
+            year: "1989",
+            webpage: "https://azaksu.com/tr/spor/bolu-karacayir-jimnastik-salonu",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Kahramanmaraş Büyükşehir Belediyesi Binası",
+            latLong: [37.57643014686235, 36.92679803712217],
+            arch: ["Özgür Karakaş"],
+            year: "2006-2010",
+            webpage: "https://odoarchitecture.com/kahramanmaras-buyuksehir-belediyesi-binasi/",
+            exists: true,
+        },
+    },
 ];
 var markersLayer = new L.LayerGroup(); //layer contain searched elements
 var passiveMarkersLayer = new L.LayerGroup(); //layer contain searched elements
