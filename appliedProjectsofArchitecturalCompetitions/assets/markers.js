@@ -543,6 +543,66 @@ let projectArray = [{
             exists: true,
         },
     },
+    {
+        details: {
+            name: "Kayabaşı 17. Bölge Konutları",
+            latLong: [41.1279458900508, 28.77940816276173],
+            arch: ["BBMD"],
+            year: "2009-2012",
+            webpage: "http://www.bingolbarka.com/Project/kayabasi-17-bolge-konutlari/498/",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Mimar Sinan Kongre Merkezi",
+            latLong: [36.917373762095366, 30.67567582666117],
+            arch: ["Murat Taş", "Sadık Gökhan Ekinci", "Doğuşcan Aladağ"],
+            year: "2011-2016",
+            webpage: "https://odoarchitecture.com/mimar-sinan-kongre-merkezi/",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Kahramanmaraş Kültür Parkı",
+            latLong: [37.57829422891658, 36.92468731987658],
+            arch: ["BBMD"],
+            year: "2008-2015",
+            webpage: "http://www.bingolbarka.com/Project/kahramanmaras-kultur-parki/502/",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Kayabaşı Vadi Evler Sosyal Konutları",
+            latLong: [41.13331063225814, 28.7783268272329],
+            arch: ["MTF Proje"],
+            year: "2009-2019",
+            webpage: "http://www.mtfproje.com.tr/portfolios/vadi-evler/",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Ceuta Sosyal Konutları",
+            latLong: [35.88059884518674, -5.34283878962405],
+            arch: ["IND"],
+            year: "2009-2011",
+            webpage: "https://www.internationaldesign.nl/Ceuta-Social-Housing",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Sabiha Gökçen Uluslararası Havaalanı",
+            latLong: [40.907707043066786, 29.315274357246604],
+            arch: ["Tekeli-Sisa Mimarlık Ortaklığı"],
+            year: "2006-2009",
+            webpage: "https://odoarchitecture.com/sabiha-gokcen-uluslararasi-havaalani/",
+            exists: true,
+        },
+    },
 ];
 var markersLayer = new L.LayerGroup(); //layer contain searched elements
 var passiveMarkersLayer = new L.LayerGroup(); //layer contain searched elements
