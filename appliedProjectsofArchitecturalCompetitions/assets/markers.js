@@ -725,7 +725,7 @@ let projectArray = [{
     {
         details: {
             name: "İstanbul Belediye Sarayı",
-            latLong: [28.95433345, 41.01345824],
+            latLong: [41.01345824, 28.95433345],
             arch: ["Nevzat Erol"],
             year: "1953-1970",
             webpage: "https://tr.wikipedia.org/wiki/%C4%B0stanbul_Belediye_Saray%C4%B1",
@@ -955,17 +955,17 @@ let projectArray = [{
         },
     },
     /*
-                        {
-                            details: {
-                                name: "",
-                                latLong: [],
-                                arch: [""],
-                                year: "",
-                                webpage: "",
-                                exists: true,
-                            },
-                        },                       
-                  */
+                          {
+                              details: {
+                                  name: "",
+                                  latLong: [],
+                                  arch: [""],
+                                  year: "",
+                                  webpage: "",
+                                  exists: true,
+                              },
+                          },                       
+                    */
 ];
 var markersLayer = new L.LayerGroup(); //layer contain searched elements
 var passiveMarkersLayer = new L.LayerGroup(); //layer contain searched elements
