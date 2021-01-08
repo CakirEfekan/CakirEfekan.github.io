@@ -603,6 +603,369 @@ let projectArray = [{
             exists: true,
         },
     },
+    {
+        details: {
+            name: "Kocaeli Valilik Binası",
+            latLong: [40.76230234119807, 29.932804792679182],
+            arch: ["Bilinmiyor"],
+            year: "1975",
+            webpage: "#",
+            exists: false,
+            demolishYear: 2015,
+        },
+    },
+    {
+        details: {
+            name: "Denizli Atatürk Anıtı",
+            latLong: [37.78084140408951, 29.084777172446852],
+            arch: ["Bilinmiyor"],
+            year: "1968",
+            webpage: [
+                "https://www.google.com/maps/@37.780755,29.0844768,3a,15.1y,88.35h,92.78t/data=!3m6!1e1!3m4!1srpV_zUdU9q8_5BFpVyB-yw!2e0!7i13312!8i6656?hl=tr",
+                "https://www.oguztopoglu.com/2012/05/denizli-ataturk-ant-29-ekim-1968-hayat.html?spref=pi",
+            ],
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Süleyman Çelebi Türbesi",
+            latLong: [40.20147551215434, 29.028956658894653],
+            arch: ["İbrahim Süzen", "Nurettin Özsalam"],
+            year: "1948-1952",
+            webpage: [
+                "https://www.belgeseltarih.com/mevlit-yazari-suleyman-celebinin-turbesi-nasil-yapildi/",
+            ],
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "T.C. Yeni Delhi Büyük Elçiliği",
+            latLong: [28.58493453574764, 77.18369945328409],
+            arch: ["Doğan Tekeli", "Sami Sisa", "Metin Hepgüler"],
+            year: "1962-1983",
+            webpage: "https://archives.saltresearch.org/handle/123456789/204739",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Sergi Evi",
+            latLong: [39.93538773598805, 32.853437045572676],
+            arch: ["Şevki Balmumcu"],
+            year: "1933-1934",
+            webpage: "https://v3.arkitera.com/h56343-gecmisin-modern-mimarligi-9-ankara-2.html",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "ODTÜ Kampüs",
+            latLong: [39.89747924194354, 32.77698333874264],
+            arch: ["Behruz Çinici", "Altuğ Çinici"],
+            year: "1961-1980",
+            webpage: "https://www.arkitektuel.com/odtu-mimarlik-fakultesi/",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Mardin Hükumet Konağı ve Adliye Binası",
+            latLong: [37.324663227597426, 40.72170014037194],
+            arch: ["UZ Mimarlık"],
+            year: "1984-1990",
+            webpage: "http://www.uzmim.net/projeler-klasor/002-mardin-hukumet-konagi/projeler1.html",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Maçka Oteli",
+            latLong: [41.04776316514171, 28.992847376595964],
+            arch: ["Yılmaz Sanlı"],
+            year: "1966-1972",
+            webpage: "http://www.arkiv.com.tr/proje/macka-oteli1/1005",
+            exists: false,
+        },
+    },
+    {
+        details: {
+            name: "Kral Faysal Camii",
+            latLong: [33.72996330415064, 73.03799970000001],
+            arch: ["Vedat Dalokay"],
+            year: "1969-1986",
+            webpage: "https://tr.wikipedia.org/wiki/Faysal_Camii",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "İzmir Büyükşehir Belediyesi Binası",
+            latLong: [38.41983883326072, 27.128836225122143],
+            arch: ["Özdemir Arnas", "Altan Akı", "Erhan Demirok"],
+            year: "1966-1983",
+            webpage: [
+                "https://www.canhaber.com.tr/belediye-binasi-bir-kultur-mirasidir/14274/",
+                "https://www.sozcu.com.tr/2020/gundem/izmir-buyuksehir-belediyesi-binasi-bosaltiliyor-6162259/",
+            ],
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "İstanbul Radyoevi",
+            latLong: [41.04463422480155, 28.98706494806828],
+            arch: ["Doğan Erginbaş", "Ömer Güney", "İsmail Utkular"],
+            year: "1945-1949",
+            webpage: "https://tr.wikipedia.org/wiki/%C4%B0stanbul_Radyoevi",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "İstanbul Belediye Sarayı",
+            latLong: [28.95433345, 41.01345824],
+            arch: ["Nevzat Erol"],
+            year: "1953-1970",
+            webpage: "https://tr.wikipedia.org/wiki/%C4%B0stanbul_Belediye_Saray%C4%B1",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "İstanbul Adalet Sarayı",
+            latLong: [41.00685620752713, 28.9742249250412],
+            arch: ["Sedad Hakkı Eldem", "Emin Halid Onat"],
+            year: "1949-1955",
+            webpage: "http://www.kalinti-istanbul.com/item/eski-adliye-binasi/",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Gaziantep Hükümet Konağı Binası",
+            latLong: [37.06554507184387, 37.37579197638829],
+            arch: ["UZ Mimarlık"],
+            year: "1984-1987",
+            webpage: "http://www.uzmim.net/projeler-klasor/001-gaziantep-hukumet-konagi/projeler1.html",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Esenboğa Havalimanı",
+            latLong: [40.11526261445092, 32.993140266678566],
+            arch: [
+                "Ercan Çoban",
+                "Ahmet Yertutan",
+                "Suzan Esirgen",
+                "Süleyman Bayrak",
+            ],
+            year: "1998-2006",
+            webpage: "http://www.arkiv.com.tr/proje/esenboga-havalimani/3274",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Emin Onat Kabri",
+            latLong: [41.073644, 29.008395],
+            arch: ["Doğan Tekeli"],
+            year: "1965",
+            webpage: [
+                "https://archives.saltresearch.org/handle/123456789/204543",
+                "http://www.yapi.com.tr/haberler/ord-prof-m-emin-onat-mezari-basinda-anildi_70698.html",
+            ],
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Çanakkale Şehitleri Anıtı",
+            latLong: [40.04976014492551, 26.21832021672474],
+            arch: ["Feridun Kip", "Doğan Erginbaş", "İsmail Utkular"],
+            year: "1954-1960",
+            webpage: "https://www.arkitektuel.com/canakkale-sehitleri-aniti/",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Artvin Hükümet Konağı",
+            latLong: [41.18101620690893, 41.82040982816287],
+            arch: ["Mustafa Aslan Aslaner", "Erkal Güngören", "Sümer Gürel"],
+            year: "1968-1974",
+            webpage: "https://jag.journalagent.com/megaron/pdfs/MEGARON-54227-ARTICLE-GULER.pdf",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Antalya Bölge Müzesi",
+            latLong: [36.885672, 30.680179],
+            arch: ["Doğan Tekeli", "Sami Sisa", "Metin Hepgüler"],
+            year: "1964-1971",
+            webpage: "https://archives.saltresearch.org/handle/123456789/204444",
+            exists: true,
+        },
+    },
+
+    {
+        details: {
+            name: "Ankara Atatürk Kültür Merkezi",
+            latLong: [39.943525137925114, 32.84049087351811],
+            arch: ["Filiz Erkal", "Coşkun Erkal"],
+            year: "1981-1987",
+            webpage: "http://www.arkiv.com.tr/proje/ankara-ataturk-kultur-merkezi/6289",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Anıtkabir",
+            latLong: [39.925021068305256, 32.83692244060764],
+            arch: ["Emin Onat", "Orhan Arda"],
+            year: "1941-1953",
+            webpage: "https://v3.arkitera.com/h47022-anitkabirin-mimari-gercekleri.html",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Giresun Hükumet konağı",
+            latLong: [40.908403232627926, 38.36657725134364],
+            arch: ["Uygur Mimarlık"],
+            year: "	1986-1987 ",
+            webpage: "#",
+            exists: true,
+        },
+    },
+
+    {
+        details: {
+            name: "Edirne Hükümet Konağı",
+            latLong: [41.67934966761316, 26.55167035387126],
+            arch: ["Suat Taftalı", "Yılmaz Çakılcı"],
+            year: "1964-?",
+            webpage: "http://dergi.mo.org.tr/dergiler/2/259/3627.pdf",
+            exists: true,
+        },
+    },
+
+    {
+        details: {
+            name: "Ankara TRT Sitesi",
+            latLong: [39.844064229741846, 32.840919538587656],
+            arch: ["Y.E.G. Mimarlık"],
+            year: "1985-1998",
+            webpage: [
+                "https://dergipark.org.tr/tr/download/article-file/289095",
+                "https://mimarun.blogspot.com/2011/03/proje-muelliflik-haklar.html",
+            ],
+            exists: true,
+        },
+    },
+
+    {
+        details: {
+            name: "TCMB İzmir Şubesi",
+            latLong: [38.4205725981286, 27.129234444421485],
+            arch: ["Orhan Bolak"],
+            year: "1950-?",
+            webpage: "http://www.mimarlarodasiankara.org/yarismalardizini/?durum=info&yid=93",
+            exists: true,
+        },
+    },
+
+    {
+        details: {
+            name: "Girne Çıkartma Anıtı",
+            latLong: [35.34537646305289, 33.235141288361675],
+            arch: ["Mimar Yaşar Marulyalı", "Mimar Levent Aksüt"],
+            year: "1976-1978",
+            webpage: "http://docs.neu.edu.tr/library/6539381679.pdf#page=89",
+            exists: true,
+        },
+    },
+
+    {
+        details: {
+            name: "Bursa Adalet Sarayı",
+            latLong: [40.19269084736699, 29.069583811963884],
+            arch: ["Ural Mimarlık"],
+            year: "1986",
+            webpage: "http://www.uralmimarlik.com.tr/mimari-projeler",
+            exists: true,
+        },
+    },
+
+    {
+        details: {
+            name: "İstanbul Açıkhava Tiyatrosu",
+            latLong: [41.04606443802088, 28.990022151432445],
+            arch: ["Nihat Yücel", "Nahit Uysal"],
+            year: "1946-1947",
+            webpage: "https://tez.yok.gov.tr/UlusalTezMerkezi/tezDetay.jsp?id=FYe_-NbEIXxY2iElrYk4jg&no=8uiLn5215XUNGALQWVxkRw",
+            exists: true,
+        },
+    },
+
+    {
+        details: {
+            name: "Adana Hükümet Konağı ",
+            latLong: [37.00037594020639, 35.31306602593088],
+            arch: ["İtez Mimarlık"],
+            year: "1986",
+            webpage: "http://www.itezmimarlik.com/sayfa.aspx?ProjeId=52",
+            exists: true,
+        },
+    },
+
+    {
+        details: {
+            name: "Antalya Adalet Sarayı",
+            latLong: [36.88805794952485, 30.665050650417786],
+            arch: ["Ercan Çoban Mimarlık"],
+            year: "1984-1990",
+            webpage: "http://www.ecmimarlik.com/projedetay.php?id=7&proje=Antalya%20Adalet%20Saray%C4%B1",
+            exists: true,
+        },
+    },
+
+    {
+        details: {
+            name: "İstanbul Üniversitesi Kütüphanesi",
+            latLong: [41.0097208207885, 28.96218866943278],
+            arch: ["Şandor Hadi", "Hüseyin Başçetinçelik"],
+            year: "1969-1985",
+            webpage: "https://www.arkiv.com.tr/proje/istanbul-universitesi-merkez-kutuphanesi/6535",
+            exists: false,
+        },
+    },
+
+    {
+        details: {
+            name: "ODTÜ Atatürk Anıtı",
+            latLong: [39.8947563, 32.7833557],
+            arch: ["Altuğ Çinici", "Behruz Çinici"],
+            year: "1966",
+            webpage: "https://archives.saltresearch.org/handle/123456789/75234",
+            exists: true,
+        },
+    },
+    /*
+                        {
+                            details: {
+                                name: "",
+                                latLong: [],
+                                arch: [""],
+                                year: "",
+                                webpage: "",
+                                exists: true,
+                            },
+                        },                       
+                  */
 ];
 var markersLayer = new L.LayerGroup(); //layer contain searched elements
 var passiveMarkersLayer = new L.LayerGroup(); //layer contain searched elements
@@ -653,6 +1016,12 @@ projectArray.forEach((element) => {
             title: project.name,
             icon: orangeMarker,
         });
+        let webpage;
+        if (typeof project.webpage == "string") {
+            webpage = project.webpage;
+        } else {
+            webpage = project.webpage[0];
+        }
         marker.bindPopup(
             project.name +
             "<br/>" +
@@ -661,7 +1030,7 @@ projectArray.forEach((element) => {
             project.arch +
             "<br/>" +
             "<a target='_blank' href='" +
-            project.webpage +
+            webpage +
             "'>Proje Sitesi</a>"
         );
         markersLayer.addLayer(marker);
