@@ -1,6 +1,6 @@
 var controlSearch = new L.Control.Search({
     position: "topleft",
-    layer: markersLayer,
+    layer: allMarkers,
     initial: false,
     zoom: 15,
     marker: false,

@@ -796,7 +796,7 @@ let projectArray = [{
             latLong: [41.18101620690893, 41.82040982816287],
             arch: ["Mustafa Aslan Aslaner", "Erkal Güngören", "Sümer Gürel"],
             year: "1968-1974",
-            webpage: "https://jag.journalagent.com/megaron/pdfs/MEGARON-54227-ARTICLE-GULER.pdf",
+            webpage: "https://docs.google.com/viewer?url=https://jag.journalagent.com/megaron/pdfs/MEGARON-54227-ARTICLE-GULER.pdf",
             exists: true,
         },
     },
@@ -848,7 +848,7 @@ let projectArray = [{
             latLong: [41.67934966761316, 26.55167035387126],
             arch: ["Suat Taftalı", "Yılmaz Çakılcı"],
             year: "1964-?",
-            webpage: "http://dergi.mo.org.tr/dergiler/2/259/3627.pdf",
+            webpage: "https://docs.google.com/viewer?url=http://dergi.mo.org.tr/dergiler/2/259/3627.pdf",
             exists: true,
         },
     },
@@ -882,7 +882,7 @@ let projectArray = [{
         details: {
             name: "Girne Çıkartma Anıtı",
             latLong: [35.34537646305289, 33.235141288361675],
-            arch: ["Mimar Yaşar Marulyalı", "Mimar Levent Aksüt"],
+            arch: ["UMO Mimarlık"],
             year: "1976-1978",
             webpage: "http://docs.neu.edu.tr/library/6539381679.pdf#page=89",
             exists: true,
@@ -913,7 +913,7 @@ let projectArray = [{
 
     {
         details: {
-            name: "Adana Hükümet Konağı ",
+            name: "Adana Hükümet Konağı",
             latLong: [37.00037594020639, 35.31306602593088],
             arch: ["İtez Mimarlık"],
             year: "1986",
@@ -954,19 +954,136 @@ let projectArray = [{
             exists: true,
         },
     },
-    /*
-                          {
-                              details: {
-                                  name: "",
-                                  latLong: [],
-                                  arch: [""],
-                                  year: "",
-                                  webpage: "",
-                                  exists: true,
-                              },
-                          },                       
-                    */
+    {
+        details: {
+            name: "Zonguldak Hükümet Konağı",
+            latLong: [41.455017305354225, 31.78838366959],
+            arch: ["Ünsal Karaarslan Mimarlık"],
+            year: "1985-1991",
+            webpage: "http://www.unsalkaraaslanmimarlik.com/zonguldak-hukumet.html",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Mithatpaşa Anıt Mezarı",
+            latLong: [41.068219179966924, 28.982045196802215],
+            arch: ["Mimar Muzaffer Bey"],
+            year: "1909-1911",
+            webpage: "https://tr.wikipedia.org/wiki/%C3%82bide-i_H%C3%BCrriyet",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Karaköy Yolcu Salonu",
+            latLong: [41.02281013207532, 28.978021689256668],
+            arch: ["Rebii Gorbon", "Goerges Débes"],
+            year: "1935-1937",
+            webpage: "https://docs.google.com/viewer?url=http://dergi.mo.org.tr/dergiler/2/27/192.pdf",
+            exists: false,
+        },
+    },
+    {
+        details: {
+            name: "Anafartalar Çarşısı",
+            latLong: [39.941541919699134, 32.85625869111605],
+            arch: ["Ferzan Baydar", "Affan Kırımlı", "Tayfur Şahbaz"],
+            year: "1967",
+            webpage: "https://anafartalarthemovie.com/",
+            exists: true,
+        },
+    },
+    {
+        details: {
+            name: "Ankara Belediyesi Ticaret Evi",
+            latLong: [39.94137107904224, 32.858109395255035],
+            arch: ["Nezih Eldem"],
+            year: "1947",
+            webpage: "http://dergi.mo.org.tr/dergiler/2/10/79.pdf",
+            exists: true,
+        },
+    },
+
+    {
+        details: {
+            name: "Conkbayrı Mehmetçik Parkı Yazıtları",
+            latLong: [40.25080980382302, 26.307336850996297],
+            arch: ["Ahmet Gülgönen"],
+            year: "1970",
+            webpage: "https://catab.ktb.gov.tr/TR-129433/conkbayiri-mehmetcik-kitabeleri.html",
+            exists: true,
+        },
+    },
+
+    {
+        details: {
+            name: "Harbiye Orduevi",
+            latLong: [41.045595893719145, 28.98732885554079],
+            arch: ["Metin Hepgüler"],
+            year: "1969-1974",
+            webpage: "https://tr.wikipedia.org/wiki/Harbiye_Orduevi",
+            exists: true,
+        },
+    },
+
+    {
+        details: {
+            name: "Gülhane Askeri Tıp Akademisi (GATA)",
+            latLong: [39.966758721796644, 32.84059884470434],
+            arch: ["Yılmazlar Mimarlık Atölyesi"],
+            year: "1962-1971",
+            webpage: "http://www.imo.org.tr/resimler/ekutuphane/pdf/25.pdf",
+            exists: true,
+        },
+    },
+
+    {
+        details: {
+            name: "Ulus İş Hanı",
+            latLong: [39.94110138857155, 32.8549540489785],
+            arch: ["Orhan Bozkurt", "Orhan Bolak", "Gazanfer Beken"],
+            year: "1954",
+            webpage: "https://tr.wikipedia.org/wiki/Ulus_%C4%B0%C5%9Fhan%C4%B1",
+            exists: true,
+        },
+    },
+
+    {
+        details: {
+            name: "Aliağa Hükümet Konağı",
+            latLong: [38.80353925392571, 26.97055666142664],
+            arch: ["Ünsal Karaaslan Mimarlık"],
+            year: "1983-1991",
+            webpage: "http://www.unsalkaraaslanmimarlik.com/aliaga-hukumet.html",
+            exists: true,
+        },
+    },
+
+    {
+        details: {
+            name: "Dumlupınar Zafer Anıtı",
+            latLong: [38.91279183490549, 30.062734322365923],
+            arch: ["UMO Mimarlık"],
+            year: "1963-1969",
+            webpage: "http://www.umo.com.tr/tr/projeler.html",
+            exists: true,
+        },
+    },
+    /*   
+    {
+        details: {
+            name: "",
+            latLong: [],
+            arch: [""],
+            year: "",
+            webpage: "",
+            exists: true,
+        },
+    },                       
+*/
 ];
+var allMarkers = new L.LayerGroup();
 var markersLayer = new L.LayerGroup(); //layer contain searched elements
 var passiveMarkersLayer = new L.LayerGroup(); //layer contain searched elements
 
@@ -1031,9 +1148,18 @@ projectArray.forEach((element) => {
             "<br/>" +
             "<a target='_blank' href='" +
             webpage +
-            "'>Proje Sitesi</a>"
+            "'>Proje Sitesi</a>" +
+            "<br/>" +
+            "<a target='_blank' href='https://www.google.com/maps/dir/?api=1&destination=" +
+            project.latLong +
+            "'>Yol Tarifi Al</a>" +
+            "<br/>" +
+            "<a target='_blank' href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=" +
+            project.latLong +
+            "&heading=0&pitch=28&fov=80'>Sokak Görünümü</a> (Düzgün Çalışmayabilir!)"
         );
         markersLayer.addLayer(marker);
+        allMarkers.addLayer(marker);
     } else {
         marker = L.marker(new L.latLng(project.latLong), {
             title: project.name,
@@ -1050,13 +1176,34 @@ projectArray.forEach((element) => {
             project.webpage +
             "'>Proje Sitesi</a>" +
             "<br />" +
-            "<b>Proje yapısı artık mevcut değildir.</b>"
+            "<b>Proje yapısı artık mevcut değildir.</b>" +
+            "<br/>" +
+            "<a target='_blank' href='https://www.google.com/maps/dir/?api=1&destination=" +
+            project.latLong +
+            "'>Yol Tarifi Al</a>" +
+            "<br/>" +
+            "<a target='_blank' href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=" +
+            project.latLong +
+            "&heading=0&pitch=28&fov=80'>Sokak Görünümü</a> (Düzgün Çalışmayabilir!)"
         );
         passiveMarkersLayer.addLayer(marker);
+        allMarkers.addLayer(marker);
     }
 });
 var overlays = {
     "Mevcut Yapılar": markersLayer,
     "Artık Mevcut Olmayan Yapılar": passiveMarkersLayer,
 };
+map = L.map("map", {
+    layers: [mapboxSatellite, markersLayer, passiveMarkersLayer],
+    center: centeredLatlong,
+    zoomControl: false,
+    zoom: zoom,
+    worldCopyJump: true,
+});
+L.control
+    .zoom({
+        position: "topright",
+    })
+    .addTo(map);
 //added to map on positioner.js
