@@ -47,7 +47,7 @@
 </p>
 <!-- PROJECTS -->
 
-## Projeler
+## Projeler / Projects
 
 <h4>#1</h4><a target="_blank" href="https://cakirefekan.github.io/istanbulBikeMaps/index.html"><b>İBB Bisiklet İstasyonları Haritası</b><br>
 IMM Bike Stations Map</a>
@@ -57,7 +57,7 @@ Urban Design Tool</a>
 Applied Projects of Architectural Competitions</a>
 <!-- CONTACT -->
 
-## Contact
+## İletişim / Contact
 
 Efekan ÇAKIR - [@cakirefekan](https://twitter.com/cakirefekan) - cakirefekan@gmail.com
 
