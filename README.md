@@ -59,7 +59,7 @@ Applied Projects of Architectural Competitions</a>
 
 ## İletişim / Contact
 
-Efekan ÇAKIR - [@cakirefekan](https://twitter.com/cakirefekan) - cakirefekan@gmail.com
+Efekan ÇAKIR - [@cakirefekan](https://twitter.com/cakirefekan) - efekan@tutanota.com
 
 Project Link: [https://github.com/CakirEfekan/CakirEfekan.github.io](https://github.com/CakirEfekan/CakirEfekan.github.io)
 
